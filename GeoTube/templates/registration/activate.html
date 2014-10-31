@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {{ activation_key }}
+    <p>Your account failed to activate!</p>
+
+    <p>You have {{ expiration_days }} until you an no longer activate your account.</p>
+
+{% endblock %}

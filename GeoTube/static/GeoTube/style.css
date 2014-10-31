@@ -1,0 +1,29 @@
+body {
+    background: black;
+}
+
+#box1 {
+    color: gold;
+}
+#navred {
+    color: red;
+}
+
+#boxinner {
+    color: grey;
+}
+
+#thumb {
+    background: grey;
+    border-color: black;
+}
+#thumbhead {
+    color: gold;
+
+}
+
+#pushbutton {
+    background: red;
+    border-color: darkred;
+
+}
