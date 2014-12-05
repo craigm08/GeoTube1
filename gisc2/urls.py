@@ -1,6 +1,9 @@
-from django.conf.urls import patterns, include, url
-from django.contrib import admin
 from GeoTube.views import *
+from django.contrib.gis import admin
+admin.autodiscover()
+from django.conf.urls import patterns, url, include
+from django.contrib.auth.models import User
+from rest_framework import routers, serializers, viewsets
 
 urlpatterns = patterns('',
     # Examples:
@@ -14,9 +17,10 @@ urlpatterns = patterns('',
     url(r'what/$', WhatView.as_view()),
     url(r'why/$', WhyView.as_view()),
 
-    url(r'raw/$', RawView.as_view()),
     url(r'map/$', MapView.as_view()),
     url(r'graph/$', GraphView.as_view()),
+    url(r'sample/$', SampleView.as_view()),
 
     url(r'^accounts/', include('registration.backends.simple.urls')),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 )

@@ -27,3 +27,8 @@ body {
     border-color: darkred;
 
 }
+
+#map {
+    height: 800px;
+}
+
