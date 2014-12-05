@@ -2,6 +2,7 @@
 import os
 import sys
 
+#333
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gisc2.settings")
 
