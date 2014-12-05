@@ -73,7 +73,7 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'stkrbombd',
         'USER':'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'geografio',
         'HOST': 'localhost',
     }
 }
@@ -107,6 +107,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
+
+
 
 
 
